@@ -1,0 +1,5 @@
+name: 'RabbitMQ'
+description: 'A RabbitMQ Docker image'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
