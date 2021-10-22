@@ -34,6 +34,10 @@ WORKDIR /data
 # Define default command.
 CMD ["rabbitmq-start"]
 
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
 # Expose ports.
 EXPOSE 5672
 EXPOSE 15672
